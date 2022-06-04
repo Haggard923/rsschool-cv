@@ -1,9 +1,9 @@
 ![Pavel](./images/Photo.jpg)
 ## Pavel Krina
 #### Contact information:
-**Phone:** +375 44 5866021
-**E-mail:** keriowf@gmail.com
-**Telegram:** @Pavel_Krina
+* **Phone:** +375 44 5866021
+* **E-mail:** keriowf@gmail.com
+* **Telegram:** @Pavel_Krina
 
 ***
 #### About Myself:
