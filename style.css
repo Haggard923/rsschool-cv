@@ -155,3 +155,35 @@ body {
 .span {
   color: #829985;
 }
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  background-color: #829985;
+}
+.logo-rsschool {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  height: 45px;;
+}
+.footer-container {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-me {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-link {
+  color: #fff;
+}
+.footer-year {
+  display: block;
+  margin: 0 10px;
+  color: #fff;
+}
