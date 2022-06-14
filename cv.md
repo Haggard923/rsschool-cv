@@ -1,4 +1,4 @@
-![Pavel](./assets/img/photo.png)
+![Pavel](./assets/img/Photo.png)
 ## Pavel Krina
 #### Contact information:
 * **Phone:** +375 44 5866021
