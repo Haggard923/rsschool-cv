@@ -33,35 +33,31 @@ body {
 }
 
 .header {
-    border: 1px solid red;
     margin: 0;
     padding: 0;
 }
 
 .main {
-    border: 1px solid blue;
     margin: 0;
     padding: 0;
 }
 
 .footer {
-    border: 1px solid green;
     margin: 0;
     padding: 0;
 }
 
 .container {
-    border: 1px solid black;
     max-width: 1440px;
     margin: 0 auto;
 }
 
 .header-container {
-    border: 1px solid black;
     max-width: 1440px;
     margin: 0 auto;
     padding: 0;
     background-color: #555D50;
+    height: 50px;
 }
 
 .container.main-container {
@@ -74,17 +70,6 @@ body {
 
     display: flex;
     flex-wrap: wrap;
-}
-
-.aside-column {
-    width: 40%;
-
-    background-color: #343434;
-    color: white;
-}
-
-.main-column {
-    width: 60%;
 }
 
 .aside-column.aside-profile {
@@ -103,13 +88,81 @@ body {
     width: 75%;
 }
 
+@media (max-width: 768px) {
+    .aside-column {
+        width: 100%;
+    }
+
+    .aside-column.main-container {
+        order: 2;
+    }
+
+    .main-column {
+        width: 100%;
+    }
+
+    .main-column.main-container {
+        order: 1;
+    }
+}
+
+.aside-profile {
+    border-bottom: 4px solid #555D50;
+}
+
+.main-profile {
+    border-bottom: 4px solid #555D50;
+
+}
+
+.section-profile {
+    padding: 0px 40px;
+}
+
+.section {
+    padding: 10px 40px;
+    border-bottom: 2px solid #555D50;
+}
+
+.main-section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #555D50;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.section-main-title {
+    font-size: 2.5em;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin: 20px 0;
+}
+
+.section-main-subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    color: #555D50;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+ 
+    margin: 20px 0;
+}
+
 .footer-container {
-    border: 1px solid black;
     max-width: 1440px;
     margin: 0 auto;
     padding: 0;
     color: white;
     background-color: #555D50;
+    height: 50px;
 
     display: flex;
     justify-content: space-between;
@@ -122,6 +175,7 @@ body {
     align-items: center;
 
     list-style: none;
+    margin: 0;
 }
 
 .nav-link {
@@ -138,13 +192,48 @@ body {
     color: #FFA500;
 }
 
+.avatar {
+    width: 180px;
+    height: 180px;
+
+    border-radius: 50px;
+    margin: 10px 0;
+}
+
+.aside-link {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+  
+.aside-link:hover {
+    color: #FFA500;
+}
+
+.main-link {
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+.main-link:hover {
+    color: #FFA500;
+}
+
+
 .footer-git {
     display: block;
     background-image: url(./assets/img/github-logo-vector.svg);
     background-repeat: no-repeat;
     width: 200px;
     height: 100px;
-    margin: 0 20px;
+    margin: 0 100px;
+    padding: 0;
+}
+
+.footer-text {
+    margin: 0;
+    padding: 0;
 }
 
 .footer-rss {
@@ -153,5 +242,5 @@ body {
     background-repeat: no-repeat;
     width: 100px;
     height: 45px;
-    margin: 0 20px;
+    margin: 0 100px;
 }
